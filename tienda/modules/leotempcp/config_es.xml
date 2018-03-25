@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>leotempcp</name>
+	<displayName><![CDATA[Panel de control Tema Leo]]></displayName>
+	<version><![CDATA[1.0]]></version>
+	<description><![CDATA[cambiar el color del tema]]></description>
+	<author><![CDATA[]]></author>
+	<tab><![CDATA[Home]]></tab>
+	<confirmUninstall><![CDATA[¿Está seguro que desea desinstalar temáticas Skins?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>
