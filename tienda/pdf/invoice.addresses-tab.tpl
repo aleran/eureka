@@ -30,12 +30,11 @@
 		<td width="23%"><span class="bold"></span><br/><br/>
 			Cedula o NIT<br>
 			Nombre<br>
-			<br>
-			Direción:<br>
-			País<br>
+			Dirección:<br><br>
+			Departamento:<br>
+			Ciudad:<br>
 			Telefonos:<br>
-			Alumnos:<br>
-			Cursos:
+			
 			
 		</td>
 		<td width="53%"><span class="bold">{l s='Billing Address' pdf='true'}</span><br/><br/>
