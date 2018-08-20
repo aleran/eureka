@@ -973,7 +973,7 @@ section {
 	=========================================================== */
 
 .header {
-	background: rgba(0, 0, 0, 0.85);
+	background: rgba(66, 0, 158, 0.9);
 	top: 0;
 	width: 100%;
 	position: fixed;
@@ -988,7 +988,7 @@ section {
 }
 
 .header.affix {
-	background: rgba(0, 0, 0, 0.95);
+	background: rgba(66, 0, 158, 0.9);
 	width: 100%;
 	top: 0;
 	right: 0;
