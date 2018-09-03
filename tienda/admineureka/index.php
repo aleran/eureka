@@ -59,12 +59,8 @@ Dispatcher::getInstance()->dispatch();
 ?>
 <script>
 	$( document ).ready(function(){
-        $("a[href='&token=1c4506afad678a0cfc5a60e9b15c525a']").attr("target", "_blank");
-        $("a[href='&token=1c4506afad678a0cfc5a60e9b15c525a']").attr("href", "https://eurekadigital.com.co/tienda/inventario/e_archivo.php");
-
-        $("a[href='&token=8b7d965430524ae526f34f08e1d83ac6']").attr("target", "_blank");
-        $("a[href='&token=8b7d965430524ae526f34f08e1d83ac6']").attr("href", "https://eurekadigital.com.co/tienda/inventario/e_archivo.php");
-        $("a[href='&token=f8dbf84787584b393c83c5ee3ff48fa0']").attr("href", "https://eurekadigital.com.co/tienda/inventario/e_archivo.php");
+        $("li[data-submenu='108'] a").attr("target", "_blank");
+        $("li[data-submenu='108'] a").attr("href", "http://eurekadigital.com.co/tienda/inventario/e_archivo.php");
 
          $("a[href='&token=8c69d007a7fdc03489c37beba6377762']").attr("href", "https://eurekadigital.com.co/tienda/reportes/r_n.php");
 
