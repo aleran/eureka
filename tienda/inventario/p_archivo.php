@@ -24,8 +24,9 @@
 				
 					list($isbn)= explode(" ",$sheet->getCell("D".$row)->getValue());
 					$existencia=$sheet->getCell("F".$row)->getValue();
+					$precio=$sheet->getCell("G".$row)->getValue();
 
-					$sql="UPDATE ps_stock_available i INNER JOIN ps_product p on i.id_product=p.id_product SET i.quantity='".$existencia."' WHERE p.reference='".$isbn."'";
+					$sql="UPDATE ps_stock_available i INNER JOIN ps_product p on i.id_product=p.id_product INNER JOIN ps_product_shop s on i.id_product=s.id_product SET i.quantity='".$existencia."', s.price='".$precio."', p.price='".$precio."' WHERE p.reference='".$isbn."'";
 
 					$rs=mysqli_query($mysqli,$sql) or die(mysqli_error($mysqli));
 
