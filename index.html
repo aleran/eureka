@@ -36,7 +36,6 @@ Año: 2017
 		[data-sr] {
 			visibility: hidden;
 		}
-
 		 /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
@@ -45,6 +44,31 @@ Año: 2017
         margin-bottom: -70px;
       }
 
+      .Rectangulo {
+	   width: 200px;
+	   height: 80px;
+	   
+	   border-top: 1px solid #FFFFFF;
+	   border-left: 1px solid #FFFFFF;
+	   border-bottom: 1px solid #FFFFFF;
+	   display: inline-block;
+	   font-size: 19px;
+
+
+}
+
+	.Rectangulo2 {
+	   width: 200px;
+	   height: 80px;
+	   
+	   border-top: 1px solid #FFFFFF;
+	   border-right: 1px solid #FFFFFF;
+	   border-bottom: 1px solid #FFFFFF;
+	   display: inline-block;
+	   font-size: 14px;
+	   padding: 0px;
+	   font-weight: bold
+	 }
 	</style>
 </head>
 <body>
@@ -66,11 +90,20 @@ Año: 2017
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a class="active"  href="#home2" >Inicio</a></li>
-						<li><a data-scroll href="#services" >Servicios</a></li>
-						<li><a data-scroll href="#areas-conocimiento" >Áreas</a></li>
-						<li><a data-scroll href="#conocenos" >Conócenos</a></li>
-						<li><a data-scroll href="#equipo" >Equipo de trabajo</a></li>
-						<li><a data-scroll href="https://www.eurekadigital.com.co/promotores" target="_blank" title="Sistema de promotores" >Aula Máxima</a></li>
+						<li class="dropdown">
+        					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Conocenos<b class="caret"></b></a>
+					        <ul class="dropdown-menu">
+					         	<li><a data-scroll href="#conocenos">Nosotros</a></li>
+					           <li class="divider"></li>
+					           <li><a data-scroll href="#services" >Servicios</a></li>
+					       
+					           <li class="divider"></li>
+					         <li><a data-scroll href="#areas-conocimiento" >Áreas</a></li>
+					          <li class="divider"></li>
+					          
+					        </ul>
+      					</li>
+						<li><a data-scroll href="https://www.eurekadigital.com.co/promotores" target="_blank" title="Sistema de promotores" >Bitácora 2.0</a></li>
 						<li><a data-scroll href="http://www.eurekadigital.com.co/tienda/" target="_blank" title="Acceso a la tienda virtual" >Tienda</a></li>
 						<!--<li><a data-scroll href="https://www.eurekadigital.com.co/tiendavirtual/Backoffice" target="_blank" title="Módulo exclusivo para Vendedores" >Ventas</a></li>-->
 						<!--<li><a data-scroll href="#" title="Módulo para docentes" >Profesores</a></li>-->
@@ -105,9 +138,19 @@ Año: 2017
 						<a class="btn btn-action" href="https://www.eurekadigital.com.co/tienda/index.php?id_category=44&controller=category"
 						   role="button" target="_blank">Otras Editoriales
 						</a>
-						<a class="btn btn-action" href=" https://www.blinklearning.com/login"
+						<!--<a class="btn btn-action" href=" https://www.blinklearning.com/login"
 						   role="button" target="_blank">Plataforma BlinkLearning
-						</a>
+						</a>-->
+						<br><br><br>
+						<div class="Rectangulo"><br>Plataformas <br><span style="color: transparent;">d</span></div>
+						<div class="Rectangulo2">
+							<a href="https://www.blinklearning.com/login" target="_blank">BlinkLearning</a>
+							__________________________<br>
+							<a href="" id="sef" data-toggle="modal" data-target="#myModal">SEF</a> <br>
+							<span style="color: transparent;">d</span>
+						</div>
+
+
 					</div>
 				</div>
 			</div>
@@ -151,9 +194,7 @@ Año: 2017
 			<!--<div class="col-sm-4"  data-sr="enter right, hustle 20px">
 				<div class="service">
 					<i class="fa fa-laptop service-icon"></i>
-
 					<h5 class="title"><b>Compras Seguras por Internet</b></h5>
-
 					<p>En nuestra <a href="https://www.eurekadigital.com.co/tienda/" target="_blank"><b>Tienda Virtual</b></a> encontrará todos los títulos y podrá comprar de manera fácil, segura y rápida desde la comodidad de su hogar u oficina</p>
 				</div>
 			</div>-->
@@ -309,7 +350,7 @@ Año: 2017
 			<div class="col-sm-12 text-center">
 				<h2 class="section-title">Conócenos</h2>
 			</div>
-			<div class="col-sm-6">
+			<!--<div class="col-sm-6">
 			<center><h3><b>Misión</b></h3></center>
 				<p>Estar posicionada dentro de las mejores empresas del Sector Editorial, a nivel Nacional y Latinoamérica para el año 2.023,  donde nuestros colaboradores hacen a diferencia día a día. 
 				Consolidar el liderazgo de Eureka Libros como empresa Editorial Privada que busca satisfacer las necesidades de nuestros educandos y formadores mediante la edición, promoción y comercialización de textos escolares para los diferentes niveles de educación.</p>
@@ -318,7 +359,7 @@ Año: 2017
 			<center><h3><b>Visión</b></h3></center>
 				<p>Consolidarnos, en el mediano plazo, como un referente en el ámbito editorial, con cobertura nacional y latinoamericano, sobresaliendo por la calidad de los contenidos escolares y ofreciendo altos índices de impacto en términos de una comercialización eficiente y efectiva. Todo lo anterior brindando confianza y respaldo en clientes, proveedores, instituciones educativas, estudiantes y padres de familia.</p>
 			</div>
-		</div>
+		</div>-->
 	</div>
 </section>
 
@@ -387,7 +428,6 @@ Año: 2017
 					<div class="item" data-sr="enter left, hustle 60px">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/AndresSerna.png" alt="Owl Image">
-
 							<div class="team-social">
 								<ul class="list-inline">
 									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -399,227 +439,170 @@ Año: 2017
 						</div>
 						<div class="owl-caption">
 							<h5>Andrés Serna</h5>
-
 							<p>Asesor Comercial</p>
 						</div>
-
 					</div>
 					<div class="item" data-sr="enter left, hustle 60px">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/RaulBernal.png" alt="Owl Image">
-
 							<div class="team-social">
-
 							</div>
 						</div>
 						<div class="owl-caption">
 							<h5>Raúl Bernal</h5>
-
 							<p>Asesor Comercial</p>
 						</div>
-
 					</div>
 					<div class="item" data-sr="enter right, hustle 60px">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/RubenCruz.png" alt="Owl Image">
-
 							<div class="team-social">
 							</div>
 						</div>
 						<div class="owl-caption">
 							<h5>Rubén Cruz</h5>
-
 							<p>Asesor Comercial</p>
 						</div>
-
 					</div>
 					<div class="item" data-sr="enter right, hustle 60px">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/MaryoribethTriana.png" alt="Owl Image">
-
 							<div class="team-social">
-
 							</div>
 						</div>
 						<div class="owl-caption">
 							<h5>Maryoribeth Triana</h5>
-
 							<p>Asesora Comercial</p>
 						</div>
-
 					</div>
 					<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/TuliaRomero.png" alt="Owl Image">
-
 	
 						</div>
 						<div class="owl-caption">
 							<h5>Tulia Romero</h5>
-
 							<p>Asesora Comercial</p>
 						</div>
-
 					</div>
 					<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/WilsonPenaloza.png" alt="Owl Image">
-
-
 						</div>
 						<div class="owl-caption">
 							<h5>Wilson Peñaloza</h5>
-
 							<p>Asesor Comercial</p>
 						</div>
-
 					</div>
 					<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/YomairaSerna.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Yomaira Serna</h5>
-
 							<p>Gerente de Ventas</p>
 						</div>
-
 					</div>
 					<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/JaverLopez.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Javier López</h5>
-
 							<p>Contador</p>
 						</div>
-
 					</div>
 										<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/CarlosPuentes.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Carlos Alberto Puentes</h5>
-
 							<p>Logística</p>
 						</div>
-
 					</div>
 				    <div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/ceciliavelazco.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Cecilia Velazco Pérez</h5>
-
 							<p>Asesora Comercial</p>
 						</div>
-
 					</div>
 										<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/Kpineda.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Katherin Pineda</h5>
-
 							<p>Asistente Administrativo</p>
 						</div>
-
 					</div>
 										<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/DinaBlanco.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Dina Blanco</h5>
-
 							<p>Asistente Comercial</p>
 						</div>
-
 					</div>
 					<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/esfania.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Andrea Estefanía Salgado</h5>
-
 							<p>Asistente de Gerencia</p>
 						</div>
-
 					</div>
 					<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/dhania.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Dhania Castelblanco</h5>
-
 							<p>Asistente Administrativo</p>
 						</div>
-
 					</div>
 					<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/julian.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Julián Arciniegas</h5>
-
 							<p>Editor</p>
 						</div>
-
 					</div>
 					<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/espinel.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Ana Rosa Espinel</h5>
-
 							<p>Gerente Financiera</p>
 						</div>
-
 					</div>
 				      <div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/Administrativo.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Equipo Comercial Eureka</h5>
-
 							<p>Gerente Financiera</p>
 						</div>
-
 					</div>
 					<div class="item">
 						<div class="team-thumb">
 							<img src="assets/images/equipo/bodega.png" alt="Owl Image">
-
 						</div>
 						<div class="owl-caption">
 							<h5>Personal de Bodega</h5>
-
 							<p>Gerente Financiera</p>
 						</div>
-
 					</div>
 				</div>
-
 			</div>		
 		</div>-->
 		<br><br>
@@ -650,11 +633,9 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12  branding"  >
 					<div class="works">
 						<img src="assets/images/work1.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 								<h4>José Poveda</h4>
-
 								<p>Matemática</p>
 								<a class="btn-view" href="assets/images/work1.png">+INFO<i class="fa fa-angle-right"></i></a>
 							</div>
@@ -664,11 +645,9 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 design" >
 					<div class="works">
 						<img src="assets/images/work2.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 								<h4>Jorge López</h4>
-
 								<p>Inglés Primaria</p>
 								<a class="btn-view" href="#">+INFO <i class="fa fa-angle-right"></i></a>
 							</div>
@@ -678,7 +657,6 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 development" >
 					<div class="works">
 						<img src="assets/images/work3.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 								<h4>Natalia Gómez</h4>
@@ -692,11 +670,9 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 design" >
 					<div class="works">
 						<img src="assets/images/work2.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 								<h4>Pepe Lopez</h4>
-
 								<p>Ingles</p>
 								<a class="btn-view" href="#">VIEW <i class="fa fa-angle-right"></i></a>
 							</div>
@@ -706,11 +682,9 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 strategy" >
 					<div class="works">
 						<img src="assets/images/work7.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 								<h4>Luna Ramirez</h4>
-
 								<p>Lenguaje</p>
 								<a class="btn-view" href="#">VIEW <i class="fa fa-angle-right"></i></a>
 							</div>
@@ -720,11 +694,9 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 branding" >
 					<div class="works">
 						<img src="assets/images/work1.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 								<h4>Michel Garcia</h4>
-
 								<p>Cálculo</p>
 								<a class="btn-view" href="#">VIEW <i class="fa fa-angle-right"></i></a>
 							</div>
@@ -734,11 +706,9 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 strategy" >
 					<div class="works">
 						<img src="assets/images/work7.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 								<h4>Arturo Simancas</h4>
-
 								<p>Lengua 2</p>
 								<a class="btn-view" href="#">VIEW <i class="fa fa-angle-right"></i></a>
 							</div>
@@ -748,11 +718,9 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 development" >
 					<div class="works">
 						<img src="assets/images/work8.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 								<h4>Marta Suárez</h4>
-
 								<p>Ciencias 10</p>
 								<a class="btn-view" href="#">+INFO<i class="fa fa-angle-right"></i></a>
 							</div>
@@ -762,11 +730,9 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 branding" >
 					<div class="works">
 						<img src="assets/images/work1.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 								<h4>Jorge Russ</h4>
-
 								<p>Calculo 2</p>
 								<a class="btn-view" href="#">VIEW <i class="fa fa-angle-right"></i></a>
 							</div>
@@ -804,10 +770,8 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12  branding"  >
 					<div class="works">
 						<img src="assets/images/matematica.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
-
 								<p>Objetivo e Matemática 1</p>
 								<a class="btn-view" href="https://www.eurekadigital.com.co/tienda/index.php?id_product=39&controller=product" target="_blank">VER<i class="fa fa-angle-right"></i></a>
 							</div>
@@ -817,7 +781,6 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 branding" >
 					<div class="works">
 						<img src="assets/images/matematica2.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 							
@@ -830,7 +793,6 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 branding" >
 					<div class="works">
 						<img src="assets/images/matematica3.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
 							
@@ -843,10 +805,8 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 design" >
 					<div class="works">
 						<img src="assets/images/lecturamaa.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
-
 								<p>Lecturama A</p>
 								<a class="btn-view" href="https://www.eurekadigital.com.co/tienda/index.php?id_product=17&controller=product" target="_blank">VER<i class="fa fa-angle-right"></i></a>
 							</div>
@@ -856,10 +816,8 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 design" >
 					<div class="works">
 						<img src="assets/images/megalectoresa.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
-
 								<p>Mega Lectores B</p>
 								<a class="btn-view" href="#">VIEW <i class="fa fa-angle-right"></i></a>
 							</div>
@@ -869,10 +827,8 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 development" >
 					<div class="works">
 						<img src="assets/images/sociales00.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
-
 								<p>Objetivo e Sociales Incial</p>
 								<a class="btn-view" href="#">VER<i class="fa fa-angle-right"></i></a>
 							</div>
@@ -882,10 +838,8 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 strategy" >
 					<div class="works">
 						<img src="assets/images/preescolar1.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
-
                                 <p>Cartilla Animación a la Lectura</p>
 								<a class="btn-view" href="#">VER<i class="fa fa-angle-right"></i></a>
 							</div>
@@ -895,10 +849,8 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 development" >
 					<div class="works">
 						<img src="assets/images/sociales1.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
-
 								<p>Objetivo e Sociales 1</p>
 								<a class="btn-view" href="#">VER<i class="fa fa-angle-right"></i></a>
 							</div>
@@ -908,10 +860,8 @@ Año: 2017
 								<div class="col-md-4 col-sm-6 col-xs-12 strategy" >
 					<div class="works">
 						<img src="assets/images/preescolar2.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
-
 								<p>Cartilla animación a la lectura</p>
 								<a class="btn-view" href="#">VER<i class="fa fa-angle-right"></i></a>
 							</div>
@@ -921,10 +871,8 @@ Año: 2017
 				<div class="col-md-4 col-sm-6 col-xs-12 development" >
 					<div class="works">
 						<img src="assets/images/sociales2.png" alt="">
-
 						<div class="work-overlay text-center">
 							<div class="overlay-caption">
-
 								<p>Objetivo e Sociales 2</p>
 								<a class="btn-view" href="#">VER<i class="fa fa-angle-right"></i></a>
 							</div>
@@ -940,7 +888,6 @@ Año: 2017
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<h1 class="section-title">Recent blog posts</h1>
-
 				<p class="sec-subtitle">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
 			</div>
 		</div>
@@ -953,12 +900,10 @@ Año: 2017
 					<div class="post-header clearfix">
 						<div class="post-date pull-left">
 							<h1>18</h1>
-
 							<p>OCT</p>
 						</div>
 						<div class="post-title pull-left">
 							<h4><a href="#">dolor sit amet, consetetur sadipscing elitr amet</a></h4>
-
 							<p>By <a href="#">Shamim</a> in <a href="#">Development</a></p>
 						</div>
 					</div>
@@ -971,7 +916,6 @@ Año: 2017
 							voluptua.sed
 							diam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua.
 							At vero eos etamet, et accusam et justo duo </p>
-
 						<p><a href="#">Read More</a></p>
 					</div>
 				</div>
@@ -986,12 +930,10 @@ Año: 2017
 					<div class="post-header clearfix">
 						<div class="post-date pull-left">
 							<h1>18</h1>
-
 							<p>OCT</p>
 						</div>
 						<div class="post-title pull-left">
 							<h4><a href="#">dolor sit amet, consetetur sadipscing elitr amet</a></h4>
-
 							<p>By <a href="#">Shuhagh</a> in <a href="#">Design</a></p>
 						</div>
 					</div>
@@ -1004,7 +946,6 @@ Año: 2017
 							voluptua.sed
 							diam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua.
 							At vero eos etamet, et accusam et justo duo </p>
-
 						<p><a href="#">Read More</a></p>
 					</div>
 				</div>
@@ -1034,7 +975,6 @@ Año: 2017
 								est,
 								omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
 								rerum”</p>
-
 							<p class="testimonial-author">John Doe, Google Inc.</p>
 						</div>
 					</div>
@@ -1044,7 +984,6 @@ Año: 2017
 								est,
 								omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
 								rerum”</p>
-
 							<p class="testimonial-author">Shamim Shuhagh, ShapedTheme.</p>
 						</div>
 					</div>
@@ -1054,7 +993,6 @@ Año: 2017
 								est,
 								omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut
 								rerum”</p>
-
 							<p class="testimonial-author">Jacob Brunette, Google Inc.</p>
 						</div>
 					</div>
@@ -1078,7 +1016,6 @@ Año: 2017
 			<!--<div class="col-sm-4" data-sr="enter left, hustle 80px">
 				<div class="address">
 					<p class="address-title title"><i class="fa fa-map-marker"></i>Dirección:</p>
-
 					<p class="address-content"><b>Sede Principal:&nbsp;</b><br> CRA 21 # 37-24 Br. La Soledad<br>
 						Bogotá D.C.</p><br>
 					<p class="address-content"><b>Puntos de venta:&nbsp;</b><br>- CRA 21 # 39A 22-24 Br. La Soledad<br>- CRA 19 # 4-19 sur Br. San Antonio
@@ -1088,7 +1025,6 @@ Año: 2017
 				</div>
 				<div class="address">
 					<p class="address-title title"><i class="fa fa-mobile-phone"></i> Teléfono: </p>
-
 					<p class="address-content">PBX:&nbsp; (571) 7031014 <br>
 					Celular:&nbsp; 3004901906
 					<br>
@@ -1098,7 +1034,6 @@ Año: 2017
 				</div>
 				<div class="address">
 					<p class="address-title title"><i class="fa fa-envelope-o"></i>Correo Electrónico:</p>
-
 					<p class="address-content">info@eurekalibros.com.co</p>
 				</div>
 			</div>-->
@@ -1145,27 +1080,23 @@ position: fixed;
 bottom: 30px; /* Distancia desde abajo */
 right: 30px; /* Distancia desde la derecha */
 }
-
 #IrArriba span {
 width: 60px; /* Ancho del botón */
 height: 60px; /* Alto del botón */
 display: block;
 background: url('img/flecha.png') no-repeat center center;
 }
-
 	#IrAbajo {
 position: fixed;
 bottom: 30px; /* Distancia desde abajo */
 right: 30px; /* Distancia desde la derecha */
 }
-
 #IrAbajo span {
 width: 60px; /* Ancho del botón */
 height: 60px; /* Alto del botón */
 display: block;
 background: url('img/flecha2.png') no-repeat center center;
 }
-
 </style>
 <div id='IrArriba'>
 <a href='#'><span/></a>
@@ -1186,6 +1117,27 @@ var markerCluster = new MarkerClusterer(map, markers,
 <!-- / Contact-->
 <!--Footer-->
 
+<div id="myModal" class="modal fade">
+	    		<div class="modal-dialog">
+	        		<div class="modal-content" style="background:#52004F;">
+	            		<div class="modal-header">
+	                
+	                		<h3 class="modal-title"><center><span style="color: #fff">SEF: Sistema de evaluaciones formativas</span></center></h3>
+	           			</div>
+			            <div class="modal-body" align="center">
+			                <h5 style="color: #fff">Elige la opción para ingresar:</h5>
+			              	 <a href="https://pruebas.eurekadigital.com.co/" target="_blank" class="btn btn-action" id="continuar"  Title="Estudiante">Estudiante</a>
+			                <a href="https://pruebas.eurekadigital.com.co/extension/" target="_blank" class="btn btn-action" id="continuar" Title="Profesor">Profesor</a>
+			                
+			            </div>
+			            <div class="modal-footer">
+			                <a href="https://pruebas.eurekadigital.com.co/extension/"  class="btn btn-action" id="continuar" data-dismiss="modal" Title="Cerrar">Cerrar</a>
+			               
+			            </div>
+	        		</div>
+	    		</div>
+			</div>
+
 <footer id="footer">
 	<div class="container">
 		<div class="row">
@@ -1193,22 +1145,37 @@ var markerCluster = new MarkerClusterer(map, markers,
 				<div class="address">
 						<!--<p class="address-title title"><i class="fa fa-map-marker"></i>Dirección:</p>-->
 
-						<p class="address-title title"><i class="fa fa-map-marker"></i> Sede Administrativa:&nbsp;</p><br><p class="address-content"> CRA 21 # 37-24 Br. La Soledad<br>
+						<p class="address-title title"><i class="fa fa-map-marker"></i> Administracón y Logística:&nbsp;</p><br><p class="address-content"> Calle 5A # 29-03 Br. Santa Isabel<br>
 							Bogotá D.C.</p>
 						
 						<p class="address-title title"><i class="fa fa-mobile-phone"></i> Teléfonos: </p>
 
-						<p class="address-content">PBX:&nbsp; (571) 7031014 <br>
-						Celular:&nbsp; 300 4901906</p>
+						<p class="address-content">PBX:&nbsp; (571) 703 1014 Opción 2<br>
+						Celular:&nbsp; 300 490 1906</p>
 						</div>
 			</div>
-			<div class="col-sm-5">
+
+			<div class="col-sm-3">
+				<div class="address">
+						<!--<p class="address-title title"><i class="fa fa-map-marker"></i>Dirección:</p>-->
+
+						<p class="address-title title"><i class="fa fa-map-marker"></i> Editorial y Comercial:&nbsp;</p><br><p class="address-content"> Carrera 21 # 37-24 Br. La Soledad<br>
+							Bogotá D.C.</p>
+						
+						<p class="address-title title"><i class="fa fa-mobile-phone"></i> Teléfonos: </p>
+
+						<p class="address-content">PBX:&nbsp; (571) 703 1014<br>
+						Celular:&nbsp; 317 783 8233</p>
+						</div>
+			</div>
+
+			<div class="col-sm-3">
 				<div class="address">
 							 <p class="address-title title"><i class="fa fa-map-marker"></i>Puntos de venta:</p>&nbsp;<br><p class="address-content">- CRA 21 # 39A 22-24 Br. La Soledad
 							<!--<br>- CRA 19 # 4-19 sur Br. San Antonio
 							<br>- CALLE 142 # 9-42  Br. Cedritos-->
 							<br>- Medellín: CRA 65 # 49B-21 Local:207 Bloque B
-							<br>- Ibagué: CALLE 5ta # 63-64 Local B21 Módulo T</p>
+							
 						</div>
 			</div> 
 			<div class="col-sm-3">
@@ -1216,7 +1183,7 @@ var markerCluster = new MarkerClusterer(map, markers,
 					<p class="address-title title"><i class="fa fa-mobile-phone"></i> Teléfonos: </p>
 						<br>
 						<p class="address-content">Bogotá, Teusaquillo:&nbsp; 316 5537642 <br>
-						Bogotá, Sur:&nbsp; 301 6304246<br>
+						Bogotá, Sur:&nbsp; 316 4291036<br>
 						Bogotá, Norte:&nbsp; 318 7952630<br>
 						Medellín:&nbsp; 314 7004367</p>
 
@@ -1260,7 +1227,7 @@ var markerCluster = new MarkerClusterer(map, markers,
 					</ul>
 				</div>-->
 
-				<p>&copy; 2018 - Eureka Libros S.A.S, Desarrollado por <a href="http://www.solucionesartech.com" target="_blank" title="Visitar página del Desarrollador">Artech Soluciones</a></p>
+				<p>&copy; 2019 - Eureka Libros S.A.S, Desarrollado por <a href="http://www.solucionesartech.com" target="_blank" title="Visitar página del Desarrollador">Artech Soluciones</a></p>
 			</div>
 		</div>
 	</div>
@@ -1297,21 +1264,16 @@ var markerCluster = new MarkerClusterer(map, markers,
 		$(".affix").css("background","rgba(0, 0, 0, 1)");
     		$(".navbar-default").css("background","rgba(0, 0, 0, 0.45)");
     		
-
     })
 </script>
 <!--<script>
-
       function initMap() {
-
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
           center: {lat: 4.665075, lng: -74.067764}
         });
-
         // Create an array of alphabetical characters used to label the markers.
         var labels = 'ABCD';
-
         // Add some markers to the map.
         // Note: The code uses the JavaScript Array.prototype.map() method to
         // create an array of markers based on a given "locations" array.
@@ -1322,7 +1284,6 @@ var markerCluster = new MarkerClusterer(map, markers,
             label: labels[i % labels.length]
           });
         });
-
         // Add a marker clusterer to manage the markers.
         var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
@@ -1352,7 +1313,6 @@ var markerCluster = new MarkerClusterer(map, markers,
     $("html, body").animate({ scrollTop: 0 }, 600);
     return false;
 });
-
 		$(window).scroll(function(){
    if ($(this).scrollTop() < 100) {
         $('#IrAbajo').fadeIn();
